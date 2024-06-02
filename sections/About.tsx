@@ -3,7 +3,7 @@ import Btn from "@/components/Btn";
 
 export default function About() {
   return (
-    <div className="pad flex flex-row ">
+    <div className="pad h-[600px] flex flex-row ">
       <div>
         img
       </div>

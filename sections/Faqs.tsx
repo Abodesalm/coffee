@@ -3,7 +3,7 @@ import Collapse from "@/components/Collapse";
 
 export default function Faqs() {
   return (
-    <div className="pad flex flex-col ">
+    <div className="pad min-h-[500px] flex flex-col ">
       <h2>Common Customer Questions</h2>
       <Collapse/>
       <Collapse/>

@@ -4,7 +4,7 @@ import Btn from "@/components/Btn";
 export default function Contact() {
   return (
     <div className="pad ">
-      <div className="p-2 flex flex-row ">
+      <div className="p-2 h-[500px] flex flex-row ">
 
         <div className="flex flex-col ">
           <h2>Contact us</h2>
