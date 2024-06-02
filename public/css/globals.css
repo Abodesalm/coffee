@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  direction: ltr !important;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #01b4d2;
+  color: #081027;
+}
+
+::selection {
+  background-color: #01b4d2;
+  color: #081027;
+}
+
+/* 
+@font-face {
+    font-family:ar-b;
+    src: url('../media/Shabnam-Bold.ttf');
+}
+@font-face {
+    font-family:ar-l;
+    src: url('../media/Shabnam-Light.ttf');
+}
+@font-face {
+    font-family:en-b;
+    src: url('../media/Saira-ExtraBold.ttf');
+}
+@font-face {
+    font-family:en-l;
+    src: url('../media/Saira-Regular.ttf');
+}
+ */
+.pad {
+  padding: 2rem 10rem;
+}
+@media screen and (max-width: 1300px) {
+  .pad {
+    padding: 2rem 6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pad {
+    padding: 1.5rem 4rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .pad {
+    padding: 1.5rem 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pad {
+    padding: 1rem 1rem;
+  }
+}
+
+.scrollTop {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: #01b4d2;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  bottom: -50px;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.scrollTop.show {
+  bottom: 15px;
+}
+@media screen and (max-width: 720px) {
+  .scrollTop.show {
+    bottom: 20px;
+  }
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.space {
+  line-height: 47px;
+}
+
+@media screen and (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-ss {
+    display: flex;
+  }
+  .rot {
+    transform: rotate(312deg);
+    -webkit-transform: rotate(312deg);
+    -moz-transform: rotate(312deg);
+    -ms-transform: rotate(312deg);
+    -o-transform: rotate(312deg);
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 1rem;
+  }
+  .login {
+    display: none;
+  }
+  .nav-logo img {
+    width: 110px;
+  }
+}/*# sourceMappingURL=globals.css.map */
