@@ -19,7 +19,7 @@ const ToUp = () => {
   }
 
   return (
-    <div className={"scrollTop px-6 text-dark font-bold  " + clas} onClick={scrlTop}>للأعلى</div>
+    <div className={"scrollTop px-6 text-dark font-bold  " + clas} onClick={scrlTop}>UP</div>
   )
 }
 

@@ -5,12 +5,12 @@ import logo from '../public/images/coffee-logo.png'
 
 export default function Navbar() {
   return (
-    <nav className="h-[100px] pad flex flex-row justify-between items-center transition">
+    <nav className="h-[100px] pad flex flex-row justify-between items-center">
       <div className="">
         <Image src={logo} alt="logo" width={80}/>
       </div>
 
-      <div className="flex flex-row w-1/2 justify-around items-center transition">
+      <div className="flex flex-row w-1/2 justify-around items-center">
         <Btn status="link" to='#header'>Home</Btn>
         <Btn status="link" to='#about'>About</Btn>
         <Btn status="link" to='#service'>Service</Btn>

@@ -10,13 +10,13 @@
 }
 
 ::-moz-selection {
-  background-color: #01b4d2;
-  color: #081027;
+  background-color: #b16755 !important;
+  color: #1f150e;
 }
 
 ::selection {
-  background-color: #01b4d2;
-  color: #081027;
+  background-color: #b16755 !important;
+  color: #1f150e;
 }
 
 /* 
@@ -65,7 +65,7 @@
   width: 40px;
   height: 40px;
   z-index: 10;
-  background-color: #01b4d2;
+  background-color: #b16755;
   position: fixed;
   cursor: pointer;
   border-radius: 5px;
@@ -109,8 +109,38 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .space {
   line-height: 47px;
+}
+
+.space-2 {
+  line-height: 37px;
+}
+
+.back {
+  border: 2px #b16755 solid;
+  background: #2c1f17;
+  border-radius: 12px;
+}
+
+.input {
+  background-color: transparent;
+  border-bottom: 2px #b16755 solid;
+  width: 180%;
+  padding: 6px;
+}
+.input::-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.input::placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 720px) {

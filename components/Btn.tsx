@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Btn({children='', clas='', to='#header', status='btn'}) {
+export default function Btn({children, clas='', to='#header', status='btn'}) {
   
   const btnStatus = ' border border-2 '
   const linkStatus = ' hover:border hover:border-2 py-[0.4rem] '

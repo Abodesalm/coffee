@@ -6,13 +6,9 @@
 
 
 // Variables :
-$dark:#081027;
-$light:#dfedf0;
-$main: #01b4d2;
-$sec: #5a8cff;
-$darke:#33373b;
-$lighte:#cacaca;
-$lity:#abfeff;
+$back : #1f150e;
+$upback : #2c1f17;
+$main : #b16755;
 
 *{
     box-sizing: border-box !important;
@@ -23,8 +19,8 @@ $lity:#abfeff;
 }
 
 ::selection{
-    background-color: $main;
-    color:$dark
+    background-color: $main !important;
+    color: $back;
 }
 /* 
 @font-face {
@@ -89,8 +85,30 @@ h3{
     font-size: 30px;
     font-weight: 500;
 }
+h4{
+    font-size: 20px;
+    font-weight: 500;
+}
 .space{
     line-height: 47px;
+}
+.space-2{
+    line-height: 37px;
+}
+.back{
+    border : 2px $main solid;
+    background : $upback;
+    border-radius: 12px;
+}
+.input{
+    background-color: transparent;
+    border-bottom: 2px $main solid;
+    width: 180%;
+    padding: 6px;
+    &::placeholder{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
 }
 
 
