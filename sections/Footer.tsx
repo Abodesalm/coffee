@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="pad flex flex-row justify-around">
+    <footer className="pad flex flex-row justify-around">
       <div>
         img
         <div className="flex flex-row">
@@ -36,6 +36,6 @@ export default function Footer() {
         <input type="email" />
       </div>
 
-    </div>
+    </footer>
   )
 }
