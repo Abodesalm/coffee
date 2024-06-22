@@ -5,9 +5,9 @@ import image from '../public/images/coffee-2.png'
 
 export default function About() {
   return (
-    <div className="pad h-[500px] mt-12 flex flex-row justify-between " id="about">
+    <div className="pad h-[550px] lg:h-[700px] mt-12 lg:mt-4 flex flex-row lg:flex-col justify-between items-center " id="about">
       <div className=" self-center">
-        <Image src={image} alt="image" width={500}/>
+        <Image src={image} alt="image" width={500} className="lg:w-[300px]"/>
       </div>
       <div className="back flex flex-col justify-between items-start w-[600px] px-8 py-4">
         <h2>About us</h2>

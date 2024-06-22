@@ -2,25 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './helpers/mixins';
-
+@import "./helpers/mixins";
 
 // Variables :
-$back : #1f150e;
-$upback : #2c1f17;
-$main : #b16755;
+$back: #1f150e;
+$upback: #2c1f17;
+$main: #b16755;
 
-*{
-    box-sizing: border-box !important;
-    margin: 0;
-    padding: 0;
-    direction: ltr !important;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  direction: ltr !important;
+  scroll-behavior: smooth;
 }
 
-::selection{
-    background-color: $main !important;
-    color: $back;
+::selection {
+  background-color: $main !important;
+  color: $back;
 }
 /* 
 @font-face {
@@ -40,111 +39,163 @@ $main : #b16755;
     src: url('../media/Saira-Regular.ttf');
 }
  */
-.pad{
-    padding: 2rem 10rem;
-    @include xl{padding: 2rem 6rem;}
-    @include lg{padding: 1.5rem 4rem;}
-    @include md{padding: 1.5rem 4rem;}
-    @include sm{padding: 1rem 1rem;}
+.pad {
+  padding: 2rem 10rem;
+  @include xl {
+    padding: 2rem 6rem;
+  }
+  @include lg {
+    padding: 1.5rem 4rem;
+  }
+  @include md {
+    padding: 1.5rem 4rem;
+  }
+  @include sm {
+    padding: 1rem 1rem;
+  }
 }
 
-.scrollTop{
-    width:40px;
-    height:40px;
-    z-index:10;
-    background-color:$main;
-    position:fixed;
-    cursor:pointer;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    bottom:-50px;
-    right:90px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition:0.5s ease;
-    -webkit-transition:0.5s ease;
-    -moz-transition:0.5s ease;
-    -ms-transition:0.5s ease;
-    -o-transition:0.5s ease;
+.scrollTop {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: $main;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  bottom: -50px;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  @include lg{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    right: 50px;
+  }
 }
-.scrollTop.show{bottom:15px;@include md{bottom:20px;}}
+.scrollTop.show {
+  bottom: 15px;
+  @include md {
+    bottom: 20px;
+  }
+}
 
-h1{
-    font-size: 100px;
-    font-weight: bold;
+h1 {
+  font-size: 100px;
+  font-weight: bold;
 }
-h2{
-    font-size: 50px;
-    font-weight: 500;
+h2 {
+  font-size: 50px;
+  font-weight: 500;
 }
-h3{
-    font-size: 30px;
-    font-weight: 500;
+h3 {
+  font-size: 30px;
+  font-weight: 500;
 }
-h4{
-    font-size: 20px;
-    font-weight: 500;
+h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
-.space{
-    line-height: 47px;
+.space {
+  line-height: 47px;
 }
-.space-2{
-    line-height: 37px;
+.space-2 {
+  line-height: 37px;
 }
-.back{
-    border : 2px $main solid;
-    background : $upback;
-    border-radius: 12px;
+.back {
+  border: 2px $main solid;
+  background: $upback;
+  border-radius: 12px;
 }
-.bord-1{
-    border: 1px $main solid !important;
+.bord-1 {
+  border: 1px $main solid !important;
 }
-.input{
-    background-color: transparent;
-    border-bottom: 2px $main solid;
-    width: 180%;
-    padding: 6px;
-    &::placeholder{
-        text-transform: uppercase;
-        font-size: 12px;
-    }
+.input {
+  background-color: transparent;
+  border-bottom: 2px $main solid;
+  width: 170%;
+  padding: 6px;
+  &::placeholder {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  &::focus- {
+    outline: none !important;
+    border: none;
+  }
 }
-.img1{
-    background-image: url('../images/ser-1.jpg');
+.img1 {
+  background-image: url("../images/ser-1.jpg");
 }
-.img2{
-    background-image: url('../images/ser-2.jpg');
+.img2 {
+  background-image: url("../images/ser-2.jpg");
 }
-.img3{
-    background-image: url('../images/ser-3.jpg');
+.img3 {
+  background-image: url("../images/ser-3.jpg");
 }
-.img4{
-    background-image: url('../images/ser-4.jpg');
+.img4 {
+  background-image: url("../images/ser-4.jpg");
 }
-.img1,.img2,.img3,.img4{
-    width: 94%;
-    height: 70%;
-    background-size: cover;
-    border-radius: 12px;
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 94%;
+  height: 70%;
+  background-size: cover;
+  border-radius: 12px;
 }
-footer{
-    border-top: 2px white solid;
-    margin-top: 2rem;
+footer {
+  border-top: 2px white solid;
+  margin-top: 2rem;
 }
-.auth-1{background-image: url('../images/auth-1.jpg');}
-.auth-2{background-image: url('../images/auth-2.jpg');}
-.auth-3{background-image: url('../images/auth-3.jpg');}
+.auth-1 {
+  background-image: url("../images/auth-1.jpg");
+}
+.auth-2 {
+  background-image: url("../images/auth-2.jpg");
+}
+.auth-3 {
+  background-image: url("../images/auth-3.jpg");
+}
 
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+}
 
-@media screen and (max-width:720px){.nav-links{display: none}.nav-ss{display: flex} .rot{
+@media screen and (max-width: 720px) {
+  .nav-ss {
+    display: flex;
+  }
+  .rot {
     transform: rotate(312deg);
     -webkit-transform: rotate(312deg);
     -moz-transform: rotate(312deg);
     -ms-transform: rotate(312deg);
     -o-transform: rotate(312deg);
-}}
-@media screen and (max-width:500px){nav{padding:1rem}.login{display: none}.nav-logo img{width:110px}}
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 1rem;
+  }
+  .login {
+    display: none;
+  }
+  .nav-logo img {
+    width: 110px;
+  }
+}

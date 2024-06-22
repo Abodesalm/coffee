@@ -9,10 +9,10 @@ const config: Config = {
   ],
   theme: {
     screens:{
-      'sm': {'max':'500px'},
+      'xl': {'max':'1300px'},  // DONE
+      'lg': {'max':'1024px'}, // DONE
       'md': {'max':'720px'},
-      'lg': {'max':'1024px'}, // <services> , -navbar , <about> , faqs & auth heading , contact
-      'xl': {'max':'1300px'}  // services , navbar , about
+      'sm': {'max':'500px'}
     },
     extend: {
       colors: {

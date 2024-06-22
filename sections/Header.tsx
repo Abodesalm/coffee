@@ -5,7 +5,7 @@ import image1 from "../public/images/coffee.png"
 
 export default function Header() {
   return (
-    <div className="pad h-[640px] flex flex-col items-center " id="header">
+    <div className="pad h-[640px] lg:h-[550px] flex flex-col items-center " id="header">
       <div className="flex flex-row w-full mt-20 items-center justify-between ">
         <div className="mb-32">
           <h1 className=" space mb-7">COFFEE</h1>
