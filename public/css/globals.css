@@ -111,6 +111,11 @@ h2 {
   font-size: 50px;
   font-weight: 500;
 }
+@media screen and (max-width: 720px) {
+  h2 {
+    font-size: 30px !important;
+  }
+}
 
 h3 {
   font-size: 30px;
@@ -120,6 +125,11 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 500;
+}
+@media screen and (max-width: 720px) {
+  h4 {
+    font-size: 12px !important;
+  }
 }
 
 .space {
@@ -154,9 +164,22 @@ h4 {
   text-transform: uppercase;
   font-size: 12px;
 }
+@media screen and (max-width: 720px) {
+  .input::-moz-placeholder {
+    font-size: 10px;
+  }
+  .input::placeholder {
+    font-size: 10px;
+  }
+}
 .input::focus- {
   outline: none !important;
   border: none;
+}
+@media screen and (max-width: 720px) {
+  .input {
+    width: 120%;
+  }
 }
 
 .img1 {

@@ -98,6 +98,9 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: 500;
+  @include md{
+    font-size: 30px !important;
+  }
 }
 h3 {
   font-size: 30px;
@@ -106,6 +109,9 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 500;
+  @include md{
+    font-size: 12px !important;
+  }
 }
 .space {
   line-height: 47px;
@@ -129,10 +135,14 @@ h4 {
   &::placeholder {
     text-transform: uppercase;
     font-size: 12px;
+    @include md{font-size: 10px;}
   }
   &::focus- {
     outline: none !important;
     border: none;
+  }
+  @include md{
+    width: 120%;
   }
 }
 .img1 {

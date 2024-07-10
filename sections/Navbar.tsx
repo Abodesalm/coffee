@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="h-[100px] pad flex flex-row justify-between items-center">
       <div className="">
-        <Image src={logo} alt="logo" width={80}/>
+        <Image src={logo} alt="logo" className="w-[80px] md:w-[60px]"/>
       </div>
 
       <div className="flex flex-row w-1/2 justify-around items-center nav-links">
@@ -18,9 +18,9 @@ export default function Navbar() {
         <Btn status="link" clas="xl:text-[12px]" to='#contact'>Contact</Btn>
       </div>
 
-      <div className="flex flex-row w-[25%] lg:w-[50%] md:w-[75%] justify-around items-center">
-        <p className="xl:text-[12px]">+963 997 203 291</p>
-        <Btn clas="xl:text-[10px] xl:px-[0.75rem]" to={'#header'} >Get In Touch</Btn>
+      <div className="flex flex-row w-[25%] lg:w-[50%] md:w-[50%] justify-around items-center">
+        <p className="xl:text-[12px] md:text-[10px]">+963 997 203 291</p>
+        <Btn clas="xl:text-[10px] xl:px-[0.75rem] md:text-[8px]" to={'#header'} >Get In Touch</Btn>
       </div>
     </nav>
   )

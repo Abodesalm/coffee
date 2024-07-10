@@ -5,15 +5,9 @@ import logo from './../public/images/coffee-logo.png'
 
 export default function Footer() {
   return (
-    <footer className="pad flex flex-row justify-around items-center">
-      <div className="flex flex-col">
+    <footer className="pad flex flex-row md:flex-wrap md:gap-6 justify-around items-center">
+      <div className="flex flex-col md:order-1">
         <Image src={logo} alt="logo" width={100}/>
-        <div className="flex flex-row">
-          <Link href=''></Link>
-          <Link href=''></Link>
-          <Link href=''></Link>
-          <Link href=''></Link>
-        </div>
       </div>
       
       <div className="flex flex-col gap-1">
@@ -32,7 +26,7 @@ export default function Footer() {
         <p className="font-normal texr-[14px] lg:text-[10px]">address</p>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:w-full justify-center items-center ">
         <h4 className="lg:text-[14px]">Subscribe Newsletter</h4>
         <p className="text-[12px] lg:text-[8px] font-normal">Lorem ipsum dolor sit amet, consectetur<br/>adipisicing elit. Sunt, dolor.</p>
         <input type="email" className="input w-[300px_!important] lg:w-[200px_!important]" placeholder="enter your email" />

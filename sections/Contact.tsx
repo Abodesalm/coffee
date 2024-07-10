@@ -5,11 +5,11 @@ import { BsFacebook, BsYoutube, BsTwitter, BsInstagram } from "react-icons/bs";
 export default function Contact() {
   return (
     <div className="pad " id="contact">
-      <div className="h-[460px] lg:h-[600px] back px-[4rem] py-[2rem] pb-[4rem] flex flex-row lg:flex-col justify-between items-center ">
+      <div className="h-[460px] lg:h-[600px] md:h-[700px] back px-[4rem] md:px-[3rem] py-[2rem] pb-[4rem] flex flex-row lg:flex-col justify-between items-center ">
 
-        <div className="flex flex-col justify-center gap-4 ">
+        <div className="flex flex-col justify-center md:justify-start md:w-[90%] gap-4 ">
           <h2 className="xl:text-[40px] lg:text-[30px]">Contact us</h2>
-          <div className="flex flex-col lg:flex-row justify-center gap-5">
+          <div className="flex flex-col lg:flex-row md:flex-col justify-center gap-5">
             <div>
               <h4 className="lg:text-[16px]">Email :</h4>
               <p className="text-[13px] lg:text-[10px] font-normal">example@example.com</p>
@@ -30,10 +30,10 @@ export default function Contact() {
           <input type="text" placeholder="last name" className="input"/>
           <input type="email" placeholder="email" className="input"/>
           <input type="password" placeholder="password" className="input"/>
-          <Btn>submit now</Btn>
+          <Btn clas="md:text-[10px]">submit now</Btn>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-around items-center w-1/3 lg:w-[70%] h-[70%] mt-8 -mr-20 ml-10 lg:mr-0 lg:ml-0">
+        <div className="flex flex-col lg:flex-row justify-around items-center w-1/3 lg:w-[70%] md:w-full h-[70%] mt-8 -mr-20 ml-10 lg:mr-0 lg:ml-0">
           <Link href='/' className="w-[50px] h-[50px]  border border-2 flex justify-center items-center rounded-full border-main transition text-[14px] font-bold "><BsFacebook className="text-white text-[18px]"/></Link>
           <Link href='/' className="w-[50px] h-[50px]  border border-2 flex justify-center items-center rounded-full border-main transition text-[14px] font-bold "><BsInstagram className="text-white text-[18px]"/></Link>
           <Link href='/' className="w-[50px] h-[50px]  border border-2 flex justify-center items-center rounded-full border-main transition text-[14px] font-bold "><BsTwitter className="text-white text-[18px]"/></Link>

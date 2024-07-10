@@ -4,7 +4,7 @@ import { BsChevronRight } from "react-icons/bs"
 
 export default function Services() {
 
-  const classs = 'w-[275px] h-[360px] back bord-1 flex flex-col items-center justify-evenly  xl:w-[200px] xl:h-[300px]   '
+  const classs = 'w-[275px] h-[360px] back bord-1 flex flex-col items-center justify-evenly  xl:w-[200px] xl:h-[300px] md:w-[160px] md:h-[250px] '
   const BtnClass = ' w-[50px] h-[50px] xl:w-[40px] xl:h-[40px] border-[3px] xl:border-[2px] flex justify-center items-center rounded-full border-main transition text-[14px] font-bold '
 
   return (
